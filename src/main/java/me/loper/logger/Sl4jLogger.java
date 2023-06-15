@@ -1,9 +1,9 @@
 package me.loper.logger;
 
 public class Sl4jLogger implements Logger {
-    private final org.apache.logging.log4j.Logger logger;
+    private final org.slf4j.Logger logger;
 
-    public Sl4jLogger(org.apache.logging.log4j.Logger logger) {
+    public Sl4jLogger(org.slf4j.Logger logger) {
         this.logger = logger;
     }
 
