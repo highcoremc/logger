@@ -33,4 +33,14 @@ public class JavaLogger implements Logger {
     public void severe(String s, Throwable t) {
         this.logger.log(Level.SEVERE, s, t);
     }
+
+    @Override
+    public void debug(String s) {
+        this.logger.log(Level.FINE, s);
+    }
+
+    @Override
+    public void debug(String s, Throwable t) {
+        this.logger.log(Level.FINE, s, t);
+    }
 }

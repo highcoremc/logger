@@ -12,4 +12,8 @@ public interface Logger {
 
     void severe(String s, Throwable t);
 
+    void debug(String s);
+
+    void debug(String s, Throwable t);
+
 }

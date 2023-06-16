@@ -31,4 +31,14 @@ public class Sl4jLogger implements Logger {
     public void severe(String s, Throwable t) {
         this.logger.error(s, t);
     }
+
+    @Override
+    public void debug(String s) {
+        this.logger.debug(s);
+    }
+
+    @Override
+    public void debug(String s, Throwable t) {
+        this.logger.debug(s, t);
+    }
 }
